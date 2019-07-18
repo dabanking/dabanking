@@ -1,0 +1,30 @@
+{
+  "name": "DABanking",
+  "version": "1.0.0",
+  "description": "DABanking",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node $NODE_DEBUG_OPTION ./node_modules/.bin/truffle test",
+    "testFile": "node $NODE_DEBUG_OPTION ./node_modules/.bin/truffle test ./test/JoinPackageViaToken.js",
+    "bridge": "ethereum-bridge -H localhost:7545 -a 1"
+  },
+  "author": "business@dabanking.io",
+  "devDependencies": {
+    "apr-times": "^3.0.3",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bn": "^0.1.1",
+    "dotenv": "^4.0.0",
+    "eth-gas-reporter": "^0.1.12",
+    "ganache-cli": "^6.1.8",
+    "nodemon": "^1.17.3",
+    "solidity-coverage": "^0.4.15",
+    "truffle": "5.0.0-beta.0",
+    "truffle-contract": "3.0.6",
+    "truffle-hdwallet-provider": "1.0.8",
+    "web3": "^1.0.0-beta.55"
+  }
+}
